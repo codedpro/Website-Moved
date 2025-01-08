@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website has permanently moved to FTTX.MTNIrancell.ir. Visit us at our new address."
+    />
+    <title>Website Moved</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ffcc01, #fff);
+        animation: gradientShift 5s infinite alternate;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background: linear-gradient(135deg, #ffcc01, #fff);
+        }
+        100% {
+          background: linear-gradient(135deg, #fff, #ffcc01);
+        }
+      }
+
+      .container {
+        background-color: #ffffff;
+        text-align: center;
+        padding: 60px 40px;
+        border-radius: 30px;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+        max-width: 550px;
+        width: 90%;
+        border: 5px solid #ffcc01;
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .logo {
+        width: 140px;
+        height: auto;
+        margin: 0 auto 20px;
+        animation: logoBounce 3s infinite ease-in-out;
+      }
+
+      @keyframes logoBounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #000000;
+        margin: 20px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1.2;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #555555;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .button {
+        display: inline-block;
+        background: #ffcc01;
+        color: #000000;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 15px 40px;
+        border-radius: 50px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .button:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        opacity: 0.5;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+
+      .button:hover:before {
+        opacity: 0.7;
+      }
+
+      .button span {
+        position: relative;
+        z-index: 2;
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 0.9rem;
+        color: #666666;
+        animation: fadeIn 1.5s ease-in-out;
+        font-style: italic;
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="Irancell Logo" class="logo" />
+      <h1>Website Permanently Moved</h1>
+      <p>We’ve moved! Please visit our new website at:</p>
+      <a
+        href="https://FTTX.MTNIrancell.ir"
+        class="button"
+        title="Go to FTTX.MTNIrancell.ir"
+      >
+        <span>FTTX.MTNIrancell.ir</span>
+      </a>
+      <div class="footer">
+        <p>Note: This is a temporary page and will be removed soon.</p>
+      </div>
+    </div>
+  </body>
+</html>
